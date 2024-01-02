@@ -1,0 +1,15 @@
+.type_holder{
+    background: linear-gradient(to left,rgba(202,133,6,0.6),rgba(143, 201, 143,0.7)),url('../../../assets/visa-solution.jpeg');
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width:550px) {
+    .type_holder{
+        height: auto;
+    }
+}

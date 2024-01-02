@@ -1,0 +1,12 @@
+.gradient {
+    background: linear-gradient(to right, rgba(44, 42, 42, 0.7), rgb(180, 179, 179,0.8));
+}
+  
+@media screen and (max-width:400px) {
+    .heading span{
+        font-size: 30px;
+    }
+    .banner-description{
+        font-size: 12px;
+    }
+}

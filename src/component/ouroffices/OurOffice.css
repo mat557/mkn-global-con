@@ -1,0 +1,69 @@
+.office-details{
+    height: auto;
+    width: 100%;
+}
+
+
+.office-banner{
+    background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.3)),url('../../assets/about.jpeg');
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.adress{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.adress-card{
+    display: block;
+    position: relative;
+    min-width: 30%;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid black;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: #D08958;
+      height: 32px;
+      width: 30%;
+      border-radius: 32px;
+      transform: scale(1);
+      transform-origin: 50% 50%;
+      transition: transform 0.25s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(21);
+    }
+}
+
+.adress-card:hover{
+    p {
+        transition: all 0.3s ease-out;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .heading {
+        transition: all 0.3s ease-out;
+        color: #ffffff;
+    }
+}
+
+@media (max-width:500px) {
+    .adress-card{
+        min-width: 95%;
+    }
+}

@@ -1,0 +1,5 @@
+.st-header{
+    background: linear-gradient(to right , rgba(0,0,0,0.7), rgba(0,0,0,0.3)),url('../../assets/about.jpeg');
+    background-size: cover;
+    background-position: center;
+}

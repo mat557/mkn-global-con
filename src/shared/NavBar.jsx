@@ -22,7 +22,7 @@ const NavBar = () => {
             <div className="max-w-full lg:max-w-[1300px] mx-auto fixed top-8 sticky z-50">
                 
                 <div className="navbar">
-                    <div className="navbar-start">
+                    <div className="navbar-start ">
                         <Link to="/" className=""><img className='h-12 lg:h-16 lg:w-16' src={logo} alt="" /></Link>
                     </div>
 
@@ -32,24 +32,31 @@ const NavBar = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-red-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </div>
                                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
-                                    <li><Link to='/services'     className="">SERVICES</Link></li>
-                                    <li><Link to='/'     className="text-gray-950">FILES</Link></li>
+                                    <li><Link to='/services' className="">SERVICES</Link></li>
+                                    <li><Link to='/files'     className="text-gray-950">FILES</Link></li>
                                     <li>
                                         <details className='bg-base-100'>
                                             <summary>STUDENT</summary>
                                             <ul className="p-2">
-                                                <li><Link to='/universities' className="text-gray-950">UK</Link></li>
-                                                <li><Link to='/universities' className="text-gray-950">USA</Link></li>
+                                                <li><Link to='/studentVisa/uk' className="text-gray-950">visa in UK </Link></li>
+                                                <li><Link to='/studentVisa/usa' className="text-gray-950">visa in USA</Link></li>
+                                                <li><Link to='/studentVisa/canada' className="text-gray-950">visa in CANADA</Link></li>
+                                                <li><Link to='/studentVisa/australia' className="text-gray-950">visa in AUSTRALIA</Link></li>
+                                                <li><Link to='/studentVisa/europe' className="text-gray-950">visa in EUROPE</Link></li>
                                             </ul>
                                         </details>
+                                        
                                     </li>
                                     <li>
                                         <details className='bg-base-100'>
                                             <summary>WORK</summary>
-                                            <ul className="p-2">
-                                                <li><Link to='/universities' className="text-gray-950">UK</Link></li>
-                                                <li><Link to='/universities' className="text-gray-950">USA</Link></li>
-                                            </ul>
+                                                <ul className="p-2">
+                                                    <li><Link to='/studentVisa/uk' className="text-gray-950">visa in UK </Link></li>
+                                                    <li><Link to='/studentVisa/usa' className="text-gray-950">visa in USA</Link></li>
+                                                    <li><Link to='/studentVisa/canada' className="text-gray-950">visa in CANADA</Link></li>
+                                                    <li><Link to='/studentVisa/australia' className="text-gray-950">visa in AUSTRALIA</Link></li>
+                                                    <li><Link to='/studentVisa/europe' className="text-gray-950">visa in EUROPE</Link></li>
+                                                </ul>
                                         </details>
                                     </li>
                                     <li><Link to='/office'  className="text-gray-950">OUR OFFICES</Link></li>
@@ -59,25 +66,31 @@ const NavBar = () => {
                         </div>
                     </div>
 
-                    <div className="navbar-end hidden lg:flex w-full">
+                    <div className="navbar-end hidden lg:flex min-w-[700px]">
                         <ul className="menu menu-horizontal px-1">
                             <li><Link to='/services' className="text-red-50">SERVICES</Link></li>
-                            <li><Link to='/'     className="text-red-50">FILES</Link></li>
+                            <li><Link to='/files' className="text-red-50">FILES</Link></li>
                             <li>
                                 <details>
                                     <summary className="text-red-50">STUDENT</summary>
-                                    <ul className="p-2">
-                                        <li><Link to='/universities' className="text-gray-950">UK</Link></li>
-                                        <li><Link to='/universities' className="text-gray-950">USA</Link></li>
-                                    </ul>
+                                        <ul className="p-2 w-44 text-justify -right-8">
+                                            <li><Link to='/studentVisa/uk' className="text-gray-950">visa in UK </Link></li>
+                                            <li><Link to='/studentVisa/usa' className="text-gray-950">visa in USA</Link></li>
+                                            <li><Link to='/studentVisa/canada' className="text-gray-950">visa in CANADA</Link></li>
+                                            <li><Link to='/studentVisa/australia' className="text-gray-950">visa in AUSTRALIA</Link></li>
+                                            <li><Link to='/studentVisa/europe' className="text-gray-950">visa in EUROPE</Link></li>
+                                        </ul>
                                 </details>
                             </li>
                             <li>
                                 <details>
                                     <summary className="text-red-50">WORK</summary>
                                     <ul className="p-2">
-                                        <li><Link to='/universities' className="text-gray-950">UK</Link></li>
-                                        <li><Link to='/universities' className="text-gray-950">USA</Link></li>
+                                    <li><Link to='/universities' className="text-gray-950">visa in UK </Link></li>
+                                            <li><Link to='/universities' className="text-gray-950">visa in USA</Link></li>
+                                            <li><Link to='/universities' className="text-gray-950">visa in CANADA</Link></li>
+                                            <li><Link to='/universities' className="text-gray-950">visa in AUSTRALIA</Link></li>
+                                            <li><Link to='/universities' className="text-gray-950">visa in EUROPE</Link></li>
                                     </ul>
                                 </details>
                             </li>

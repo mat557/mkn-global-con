@@ -23,15 +23,15 @@ const OurOffices = () => {
                         </div>
                         <div className='adress-card'>
                             <h1 className='heading'>Sylhet office</h1>
-                            <p className='h-text'>Milinum Market, 9th floor</p>
+                            <p className='h-text'>Millennium Market, 9th floor</p>
                             <p className='h-text'>Zindabazar</p>
                             <p className='h-text'>Sylhet, Bangladesh</p>
                         </div>
                         <div className='adress-card'>
                             <h1 className='heading'>Dhaka office</h1>
-                            <p className='h-text'>Milinum Market, 9th floor</p>
-                            <p className='h-text'>Zindabazar</p>
-                            <p className='h-text'>Dhaka, Bangladesh</p>
+                            <p className='h-text'>House 430, 1st floor</p>
+                            <p className='h-text'>Mohakhali DOHS</p>
+                            <p className='h-text'>Mohakhali, Dhaka, Bangladesh</p>
                         </div>
                 </div>
                 

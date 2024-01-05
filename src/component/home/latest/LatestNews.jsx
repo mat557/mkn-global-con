@@ -5,12 +5,13 @@ import img3 from '../../../assets/home-working.webp'
 import img4 from '../../../assets/home-travel.jpeg'
 
 
+
 const LatestNews = () => {
     let content 
 
     content = (
         <div className="h-auto max-w-[1300px] mx-auto  pb-8">
-            <div className='w-full h-40 mb-4 angle bg-gray-200'>
+            <div className='w-full h-28 mb-4 angle bg-gray-200'>
                 <p className='pt-4 text-4xl text-center text-[#D08958] pl-4'>Stay updated with us!</p>
                 <p className='text-center'>Check what we are offering now</p>
             </div>

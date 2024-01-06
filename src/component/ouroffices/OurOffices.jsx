@@ -24,13 +24,16 @@ const OurOffices = () => {
                             <p className='h-text'>London, UK</p>
                             <p className='h-text'>Mobile: +4407710615979</p>
                             <p className='h-text'>Land: 02033554453</p>
+                            <p className='h-text'>Email: admin@mknglobal.co.uk</p>
                         </div>
                         <div className='adress-card'>
                             <h1 className='heading'>Sylhet office</h1>
                             <p className='h-text'>Millennium Market, 9th floor</p>
                             <p className='h-text'>Zindabazar</p>
-                            <p className='h-text'>Sylhet</p>
-                            <p className='h-text'>Bangladesh</p>
+                            <p className='h-text'>Sylhet, Bangladesh</p>
+                            <p className='h-text'>Mobile: +8801720973011</p>
+                            <p className='h-text'>Land: </p>
+                            <p className='h-text'>Email: info@mknglobal.co.uk</p>
                         </div>
                         <div className='adress-card'>
                             <h1 className='heading'>Dhaka office</h1>
@@ -38,6 +41,8 @@ const OurOffices = () => {
                             <p className='h-text'>Road no 30</p>
                             <p className='h-text'>Mohakhali DOHS</p>
                             <p className='h-text'>Mohakhali, Dhaka, Bangladesh</p>
+                            <p className='h-text'>Mobile: </p>
+                            <p className='h-text'>Email: info@mknglobal.co.uk</p>
                         </div>
                 </div>
                 

@@ -61,8 +61,3 @@ const OurOffices = () => {
 }
 
 export default OurOffices
-
-
-// 101 whitechapel , high street  (4th floor , ) 
-
-// uk , usa,canada, aus ,europe(grance,itali,denmark,lithunia,hungery,croatia,multa)

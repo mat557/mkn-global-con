@@ -1,0 +1,161 @@
+{
+    "uk":{
+        "applicationInfo": {
+        "title": "Your can apply through us:",
+        "universities": [
+            "University of [university name] 1",
+            "University of [university name] 2",
+            "University of [university name] 3",
+            "University of [university name] 4",
+            "University of [university name] 5",
+            "University of [university name] 6"
+        ]
+        },
+        "processingDuration": {
+        "title": "Processing duration: 3-5 months.",
+        "note": "Though it may vary according to the university."
+        },
+        "requiredDocuments": {
+        "title": "Required documents:",
+        "documents": [
+            "bank statement 1",
+            "bank statement 2",
+            "bank statement 3",
+            "bank statement 4",
+            "bank statement 5",
+            "bank statement 6"
+        ]
+        },
+        "applicationProcessOverview": {
+        "title": "Overview of application process:",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi, quod est adipisci doloremque cupiditate voluptates blanditiis nemo ad assumenda eligendi! Ea nihil tenetur cumque velit a quo voluptate blanditiis deserunt soluta cum nostrum ducimus, iure, temporibus eveniet quos rerum! Aspernatur, autem voluptate iure corporis dolorem laboriosam perferendis itaque repellat."
+        }},
+    
+    "usa":{
+        "applicationInfo": {
+        "title": "Your can apply through us:",
+        "universities": [
+            "University of [university name] 1",
+            "University of [university name] 2",
+            "University of [university name] 3",
+            "University of [university name] 4",
+            "University of [university name] 5",
+            "University of [university name] 6"
+        ]
+        },
+        "processingDuration": {
+        "title": "Processing duration: 3-5 months.",
+        "note": "Though it may vary according to the university."
+        },
+        "requiredDocuments": {
+        "title": "Required documents:",
+        "documents": [
+            "bank statement 1",
+            "bank statement 2",
+            "bank statement 3",
+            "bank statement 4",
+            "bank statement 5",
+            "bank statement 6"
+        ]
+        },
+        "applicationProcessOverview": {
+        "title": "Overview of application process:",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi, quod est adipisci doloremque cupiditate voluptates blanditiis nemo ad assumenda eligendi! Ea nihil tenetur cumque velit a quo voluptate blanditiis deserunt soluta cum nostrum ducimus, iure, temporibus eveniet quos rerum! Aspernatur, autem voluptate iure corporis dolorem laboriosam perferendis itaque repellat."
+        }},
+    
+    "canada":{
+        "applicationInfo": {
+        "title": "Your can apply through us:",
+        "universities": [
+            "University of [university name] 1",
+            "University of [university name] 2",
+            "University of [university name] 3",
+            "University of [university name] 4",
+            "University of [university name] 5",
+            "University of [university name] 6"
+        ]
+        },
+        "processingDuration": {
+        "title": "Processing duration: 3-5 months.",
+        "note": "Though it may vary according to the university."
+        },
+        "requiredDocuments": {
+        "title": "Required documents:",
+        "documents": [
+            "bank statement 1",
+            "bank statement 2",
+            "bank statement 3",
+            "bank statement 4",
+            "bank statement 5",
+            "bank statement 6"
+        ]
+        },
+        "applicationProcessOverview": {
+        "title": "Overview of application process:",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi, quod est adipisci doloremque cupiditate voluptates blanditiis nemo ad assumenda eligendi! Ea nihil tenetur cumque velit a quo voluptate blanditiis deserunt soluta cum nostrum ducimus, iure, temporibus eveniet quos rerum! Aspernatur, autem voluptate iure corporis dolorem laboriosam perferendis itaque repellat."
+        }},
+    
+    "australia":{
+        "applicationInfo": {
+        "title": "Your can apply through us:",
+        "universities": [
+            "University of [university name] 1",
+            "University of [university name] 2",
+            "University of [university name] 3",
+            "University of [university name] 4",
+            "University of [university name] 5",
+            "University of [university name] 6"
+        ]
+        },
+        "processingDuration": {
+        "title": "Processing duration: 3-5 months.",
+        "note": "Though it may vary according to the university."
+        },
+        "requiredDocuments": {
+        "title": "Required documents:",
+        "documents": [
+            "bank statement 1",
+            "bank statement 2",
+            "bank statement 3",
+            "bank statement 4",
+            "bank statement 5",
+            "bank statement 6"
+        ]
+        },
+        "applicationProcessOverview": {
+        "title": "Overview of application process:",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi, quod est adipisci doloremque cupiditate voluptates blanditiis nemo ad assumenda eligendi! Ea nihil tenetur cumque velit a quo voluptate blanditiis deserunt soluta cum nostrum ducimus, iure, temporibus eveniet quos rerum! Aspernatur, autem voluptate iure corporis dolorem laboriosam perferendis itaque repellat."
+        }},
+    
+    "europe":{
+        "applicationInfo": {
+        "title": "Your can apply through us:",
+        "universities": [
+            "University of [university name] 1",
+            "University of [university name] 2",
+            "University of [university name] 3",
+            "University of [university name] 4",
+            "University of [university name] 5",
+            "University of [university name] 6"
+        ]
+        },
+        "processingDuration": {
+        "title": "Processing duration: 3-5 months.",
+        "note": "Though it may vary according to the university."
+        },
+        "requiredDocuments": {
+        "title": "Required documents:",
+        "documents": [
+            "bank statement 1",
+            "bank statement 2",
+            "bank statement 3",
+            "bank statement 4",
+            "bank statement 5",
+            "bank statement 6"
+        ]
+        },
+        "applicationProcessOverview": {
+        "title": "Overview of application process:",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi, quod est adipisci doloremque cupiditate voluptates blanditiis nemo ad assumenda eligendi! Ea nihil tenetur cumque velit a quo voluptate blanditiis deserunt soluta cum nostrum ducimus, iure, temporibus eveniet quos rerum! Aspernatur, autem voluptate iure corporis dolorem laboriosam perferendis itaque repellat."
+        }}
+    }

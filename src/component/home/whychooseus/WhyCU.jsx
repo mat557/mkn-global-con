@@ -3,9 +3,9 @@ const WhyCU = () => {
     let content
 
     content = (
-        <div className="w-full h-auto lg:h-[50vh] border-t-0 border-[#D08958]">
+        <div className="w-full h-auto lg:h-[50vh] mb-[10vh] mt-[20vh] border-t-[15px] border-[#476D81]">
             <div className="max-w-[1300px] mx-auto p-4 text-justify">
-                <h1 className="text-[#D08958] text-4xl ">Why Choose Us</h1>
+                <h1 className="text-[#476D81] my-[5vh] text-4xl text-center font-bold">Why Choose Us</h1>
                 <p className="pt-4">
                     Choose us for your visa 
                     needs and benefit from our vast experience in the industry. 

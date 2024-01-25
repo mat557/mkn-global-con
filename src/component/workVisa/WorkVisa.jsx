@@ -1,14 +1,12 @@
+import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import './StudentVisa.css'
 import Footer from '../../shared/Footer'
-import { useEffect, useState } from 'react'
 
-
-const StudentVisa = () => {
+const WorkVisa = () => {
     let content
+    const navigate = useNavigate()
     const {region} = useParams()
     const [data,setData] = useState([])
-    const navigate = useNavigate()
 
     useEffect(()=>{
         fetch('/info/universitiesInfo.json')
@@ -24,12 +22,12 @@ const StudentVisa = () => {
     },[])
     let c = region
     let info = data.find(value => (value.country == region.toUpperCase()))
-
+  
     content = (
         <div className='w-full bg-gray-100'>
             <div className='st-header h-[20vh]'>
                 <div className='max-w-[1300px] mx-auto'>
-                    <p className='text-[white] pt-[30%] md:pt-20 lg:pt-28 pl-4 text-lg lg:text-4xl'>Student visa in <span className='uppercase'>{c.toLowerCase()}</span></p>
+                    <p className='text-[white] pt-[30%] md:pt-20 lg:pt-28 pl-4 text-lg lg:text-4xl'>Work visa in <span className='uppercase'>{c.toLowerCase()}</span></p>
                 </div>
             </div>
             
@@ -38,7 +36,7 @@ const StudentVisa = () => {
                     <p className='text-2xl font-bold pb-4 text-[#476D81]'>{info?.applicationInfo?.title}</p>
                     {info?.applicationInfo?.universities?.map((a,index) => <p key={index} className='pl-4 text-lg'>{a}</p>)}
                 </div> */}
-                <button className='btn border-2 border-[#476D81]' onClick={() => navigate(`/workVisa/${region}`)}>Check work visa in {region}</button>
+                <button className='btn border-2 border-[#476D81]' onClick={() => navigate(`/studentVisa/${region}`)}>Check student visa in {region}</button>
 
                 <div className='pb-4 mt-12 w-[90%] lg:w-1/2 mx-auto text-center'>
                     <p className='text-2xl font-bold pb-0 text-[#476D81]'>{info?.processingDuration?.title}</p>
@@ -62,8 +60,7 @@ const StudentVisa = () => {
             <Footer />
         </div>
     )
-
     return content
 }
 
-export default StudentVisa
+export default WorkVisa

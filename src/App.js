@@ -8,8 +8,11 @@ import OurOffices from "./component/ouroffices/OurOffices";
 import NotFound from "./shared/NotFound";
 import StudentVisa from "./component/studentVisa/StudentVisa";
 import Files from "./component/requardFile/Files";
+import WorkVisa from "./component/workVisa/WorkVisa";
+import Details from "./component/home/visatype/Details";
+import './App.css';
 
-
+// #476D81
 function App() {
   return (
     <div>
@@ -19,7 +22,8 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/files" element={<Files />} />
           <Route path="/studentVisa/:region" element={<StudentVisa />} />
-          {/* <Route path="/workVisa/:region" element={<Universities />} /> */}
+          <Route path="/workVisa/:region" element={<WorkVisa />} />
+          <Route path="/info/:type" element={<Details />} />
           <Route path="/office" element={<OurOffices />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

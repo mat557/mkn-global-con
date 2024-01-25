@@ -4,7 +4,7 @@ const Footer = () => {
 
 
     content = (
-        <div className=' bg-[#D08958]'>
+        <div className=' bg-[#476D81]'>
             <footer className="footer p-10 max-w-full lg:max-w-[1300px] mx-auto text-base-content">
                 <nav>
                     <header className="footer-title text-red-50">Services</header> 

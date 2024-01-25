@@ -1,4 +1,4 @@
-import logo from '../assets/mkn_logo1.png'
+import logo from '../assets/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook , faXTwitter , faInstagram} from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom'
@@ -8,8 +8,10 @@ import { Link } from 'react-router-dom'
 const NavBar = () => {
     let content
 
+    
+
     content = (
-        <div className=" bg-[#D08958] fixed top-0 sticky z-50">
+        <div className=" bg-[#194962] fixed top-0 sticky z-50">
             <div className="bg-gray-50 h-8 px-1 fixed top-0 sticky z-50">
                 <div className=" flex align-center justify-between max-w-full lg:max-w-[1300px] mx-auto">
                     <div className="flex align-center justify-between">
@@ -51,11 +53,11 @@ const NavBar = () => {
                                         <details className='bg-base-100'>
                                             <summary>WORK</summary>
                                                 <ul className="p-2">
-                                                    <li><Link to='/studentVisa/uk' className="text-gray-950">Visa in UK </Link></li>
-                                                    <li><Link to='/studentVisa/usa' className="text-gray-950">Visa in USA</Link></li>
-                                                    <li><Link to='/studentVisa/canada' className="text-gray-950">Visa in CANADA</Link></li>
-                                                    <li><Link to='/studentVisa/australia' className="text-gray-950">Visa in AUSTRALIA</Link></li>
-                                                    <li><Link to='/studentVisa/europe' className="text-gray-950">Visa in EUROPE</Link></li>
+                                                    <li><Link to='/workVisa/uk' className="text-gray-950">Visa in UK </Link></li>
+                                                    <li><Link to='/workVisa/usa' className="text-gray-950">Visa in USA</Link></li>
+                                                    <li><Link to='/workVisa/canada' className="text-gray-950">Visa in CANADA</Link></li>
+                                                    <li><Link to='/workVisa/australia' className="text-gray-950">Visa in AUSTRALIA</Link></li>
+                                                    <li><Link to='/workVisa/europe' className="text-gray-950">Visa in EUROPE</Link></li>
                                                 </ul>
                                         </details>
                                     </li>
@@ -86,11 +88,11 @@ const NavBar = () => {
                                 <details>
                                     <summary className="text-red-50">WORK</summary>
                                     <ul className="p-2 w-44 text-justify -right-8">
-                                    <li><Link to='/universities' className="text-gray-950">Visa in UK </Link></li>
-                                            <li><Link to='/universities' className="text-gray-950">Visa in USA</Link></li>
-                                            <li><Link to='/universities' className="text-gray-950">Visa in CANADA</Link></li>
-                                            <li><Link to='/universities' className="text-gray-950">Visa in AUSTRALIA</Link></li>
-                                            <li><Link to='/universities' className="text-gray-950">Visa in EUROPE</Link></li>
+                                        <li><Link to='/workVisa/uk' className="text-gray-950">Visa in UK </Link></li>
+                                        <li><Link to='/workVisa/usa' className="text-gray-950">Visa in USA</Link></li>
+                                        <li><Link to='/workVisa/canada' className="text-gray-950">Visa in CANADA</Link></li>
+                                        <li><Link to='/workVisa/australia' className="text-gray-950">Visa in AUSTRALIA</Link></li>
+                                        <li><Link to='/workVisa/europe' className="text-gray-950">Visa in EUROPE</Link></li>
                                     </ul>
                                 </details>
                             </li>

@@ -11,10 +11,11 @@ const LatestNews = () => {
 
     content = (
         <div className="h-auto max-w-[1300px] mx-auto  pb-8">
-            <div className='w-full h-28 mb-4 angle bg-gray-200'>
-                <p className='pt-4 text-4xl text-center text-[#D08958] pl-4'>Stay updated with us!</p>
+            <div className='w-full h-28 mb-4'>
+                <p className='pt-4 text-4xl text-center text-[#476D81] pl-4'>Stay updated with us!</p>
                 <p className='text-center'>Check what we are offering now</p>
             </div>
+
             <div class="div-des">
             
                 <div class="div-part">

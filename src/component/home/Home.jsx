@@ -1,7 +1,6 @@
 import Footer from '../../shared/Footer'
 import Banner from './Banner/Banner'
-import CallForAction from './callToAction/CallForAction'
-import Divider from './divider/Divider'
+import HomeContact from './Contact/HomeContact'
 import LatestNews from './latest/LatestNews'
 import Services from './services/Services'
 import VisaType from './visatype/VisaType'
@@ -19,8 +18,7 @@ const Home = () => {
             <LatestNews />
             <VisaType />
             <WhyCU />
-            <Divider />
-            <CallForAction />
+            <HomeContact />
             <Footer />
         </>
     )

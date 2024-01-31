@@ -2,13 +2,16 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to right ,rgba(0,0,0,0.7),rgba(104, 105, 105, 0.5));
+    background: linear-gradient(to right ,rgba(0,0,0,0.3),rgba(104, 105, 105,0.4));
 }
 
 .text-holder{
     width: 100%;
-    background: rgb(0,0,0,0.7);
-    border-radius: 10px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 3px;
+    padding: 30px;
+    margin: 28px auto;
+    text-align: justify;
 }
 
 .butun{
@@ -27,13 +30,19 @@
     color: #476D81;
 }
 
-/* rgba(209,219,224,0.7) */
 
 
 @media screen and (max-width:450px) {
     .heading span{
         font-size: 30px;
     }
+    
+    .text-holder{
+        padding: 20px;
+        margin: 25px;
+        text-align: justify;
+    }
+
     .banner-description{
         font-size: 14px;
     }
@@ -47,5 +56,19 @@
         color: white;
         font-weight: 900;
         border-radius: 4px;
+    }
+}
+
+
+@media screen and (max-width:325px) {
+    .icon-holder{
+        top: 1vh;
+    }
+    .text-holder{
+        text-align: justify;
+    }
+    
+    .text-holder p{
+        font-size: 12px;
     }
 }

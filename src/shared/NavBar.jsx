@@ -1,107 +1,64 @@
-import logo from '../assets/logo.png'
+import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook , faXTwitter , faInstagram} from '@fortawesome/free-brands-svg-icons'
-import { Link } from 'react-router-dom'
+import { faBars, faCaretDown, faHome, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
+import logo from '../assets/logo.png'
 
-
-
-const NavBar = () => {
+const NavBar = ({isOPen , setIsOpen , sidemenu ,  dropMenu1 ,dropMenu2}) => {
     let content
+    const navigate = useNavigate()
+    const { pathname } = useLocation()
 
-    
 
     content = (
-        <div className=" bg-[#194962] fixed top-0 sticky z-50">
-            <div className="bg-gray-50 h-8 px-1 fixed top-0 sticky z-50">
-                <div className=" flex align-center justify-between max-w-full lg:max-w-[1300px] mx-auto">
-                    <div className="flex align-center justify-between">
-                        <Link className='decoration-0 pt-1'><FontAwesomeIcon icon={faFacebook}  size="lg"/>                  </Link>
-                        <Link className='decoration-0 pt-1'><FontAwesomeIcon className='pl-3'  icon={faXTwitter}  size="lg"/></Link>
-                        <Link className='decoration-0 pt-1'><FontAwesomeIcon className='pl-3' icon={faInstagram} size="lg"/> </Link>
-                    </div>
+        <div ref={sidemenu} className='nav-holder'>
+
+            <div className='nav-tag'>
+                <div className="social-link">
+                        <Link className=''><FontAwesomeIcon icon={faFacebook}  size="lg"/></Link>
+                        <Link className=''><FontAwesomeIcon className=''  icon={faXTwitter}  size="lg"/></Link>
+                        <Link className=''><FontAwesomeIcon className='' icon={faInstagram} size="lg"/> </Link>
                 </div>
             </div>
-            <div className="max-w-full lg:max-w-[1300px] mx-auto fixed top-8 sticky z-50">
-                
-                <div className="navbar">
-                    <div className="navbar-start ">
-                        <Link to="/" className=""><img className='h-12 lg:h-16 lg:w-16' src={logo} alt="" /></Link>
-                    </div>
 
-                    <div className="navbar-end">
-                        <div className="dropdown">
-                            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-red-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            <div className="nav-ele">
+
+                <div className="nav-content">
+                    <img src={logo} onClick={()=>navigate('/')} className='' alt="" />
+                    <div className='nav-text'>
+                        <p>MKN Global Consultant</p>
+                        <p>Inspiring Higher Education</p>
+                    </div>
+                </div>
+
+                <div className='nav-links'>
+                    <FontAwesomeIcon onClick={() => setIsOpen(!isOPen)} className='link-icon' icon={isOPen ? faXmark : faBars} />
+                    <ul className={isOPen? 'ul-links active' :'ul-links'}>
+                        <Link to='/' className='link'><FontAwesomeIcon className='' icon={faHome}/></Link>
+                        <Link to='/apply' className={pathname.includes('apply')?'link current':'link'}>Apply</Link>
+                        <Link to='/services' className={pathname.includes('services')?'link current':'link'}>Services</Link>
+                        <div ref={dropMenu1} className={pathname.includes('studentVisa')?'link drop-holder current':'link drop-holder'}>Student<FontAwesomeIcon className='side-icon' icon={faCaretDown}/>
+                            <div className='drop-links student'>
+                                <Link to='/studentVisa/uk'  className='drop-link'>Visa in Uk</Link>
+                                <Link to='/studentVisa/usa'  className='drop-link'>Visa in Usa</Link>
+                                <Link to='/studentVisa/canada'  className='drop-link'>Visa in Canada</Link>
+                                <Link to='/studentVisa/europe'  className='drop-link'>Visa in Europe</Link>
+                                <Link to='/studentVisa/australia'  className='drop-link'>Visa in Australia</Link>
                             </div>
-                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
-                                    <li><Link to='/services' className="">SERVICES</Link></li>
-                                    <li><Link to='/files'     className="text-gray-950">FILES</Link></li>
-                                    <li>
-                                        <details className='bg-base-100'>
-                                            <summary>STUDENT</summary>
-                                            <ul className="p-2">
-                                                <li><Link to='/studentVisa/uk' className="text-gray-950">Visa in UK </Link></li>
-                                                <li><Link to='/studentVisa/usa' className="text-gray-950">Visa in USA</Link></li>
-                                                <li><Link to='/studentVisa/canada' className="text-gray-950">Visa in CANADA</Link></li>
-                                                <li><Link to='/studentVisa/australia' className="text-gray-950">Visa in AUSTRALIA</Link></li>
-                                                <li><Link to='/studentVisa/europe' className="text-gray-950">Visa in EUROPE</Link></li>
-                                            </ul>
-                                        </details>
-                                        
-                                    </li>
-                                    <li>
-                                        <details className='bg-base-100'>
-                                            <summary>WORK</summary>
-                                                <ul className="p-2">
-                                                    <li><Link to='/workVisa/uk' className="text-gray-950">Visa in UK </Link></li>
-                                                    <li><Link to='/workVisa/usa' className="text-gray-950">Visa in USA</Link></li>
-                                                    <li><Link to='/workVisa/canada' className="text-gray-950">Visa in CANADA</Link></li>
-                                                    <li><Link to='/workVisa/australia' className="text-gray-950">Visa in AUSTRALIA</Link></li>
-                                                    <li><Link to='/workVisa/europe' className="text-gray-950">Visa in EUROPE</Link></li>
-                                                </ul>
-                                        </details>
-                                    </li>
-                                    <li><Link to='/office'  className="text-gray-950">OUR OFFICES</Link></li>
-                                    <li><Link to='/about'   className="text-gray-950">ABOUT</Link></li>
-                                    <li><Link to='/contact' className="text-gray-950">CONTACT</Link></li>
-                                </ul>
                         </div>
-                    </div>
-
-                    <div className="navbar-end hidden lg:flex min-w-[700px]">
-                        <ul className="menu menu-horizontal px-1">
-                            <li><Link to='/services' className="text-red-50">SERVICES</Link></li>
-                            <li><Link to='/files' className="text-red-50">FILES</Link></li>
-                            <li>
-                                <details>
-                                    <summary className="text-red-50">STUDENT</summary>
-                                        <ul className="p-2 w-44 text-justify -right-8">
-                                            <li><Link to='/studentVisa/uk' className="text-gray-950">Visa in UK </Link></li>
-                                            <li><Link to='/studentVisa/usa' className="text-gray-950">Visa in USA</Link></li>
-                                            <li><Link to='/studentVisa/canada' className="text-gray-950">Visa in CANADA</Link></li>
-                                            <li><Link to='/studentVisa/australia' className="text-gray-950">Visa in AUSTRALIA</Link></li>
-                                            <li><Link to='/studentVisa/europe' className="text-gray-950">Visa in EUROPE</Link></li>
-                                        </ul>
-                                </details>
-                            </li>
-                            <li>
-                                <details>
-                                    <summary className="text-red-50">WORK</summary>
-                                    <ul className="p-2 w-44 text-justify -right-8">
-                                        <li><Link to='/workVisa/uk' className="text-gray-950">Visa in UK </Link></li>
-                                        <li><Link to='/workVisa/usa' className="text-gray-950">Visa in USA</Link></li>
-                                        <li><Link to='/workVisa/canada' className="text-gray-950">Visa in CANADA</Link></li>
-                                        <li><Link to='/workVisa/australia' className="text-gray-950">Visa in AUSTRALIA</Link></li>
-                                        <li><Link to='/workVisa/europe' className="text-gray-950">Visa in EUROPE</Link></li>
-                                    </ul>
-                                </details>
-                            </li>
-                            <li><Link to='/office'  className="text-red-50">OUR OFFICES</Link></li>
-                            <li><Link to='/about'   className="text-red-50">ABOUT</Link></li>
-                            <li><Link to='/contact' className="text-red-50">CONTACT</Link></li>
-                        </ul>
-                    </div>
-
+                        <div ref={dropMenu2} className={pathname.includes('workVisa')?'link drop-holder current':'link drop-holder'}>Work<FontAwesomeIcon className='side-icon' icon={faCaretDown}/>
+                            <div className='drop-links work'>
+                                <Link to='/workVisa/uk' className='drop-link'>Visa in Uk</Link>
+                                <Link to='/workVisa/usa' className='drop-link'>Visa in Usa</Link>
+                                <Link to='/workVisa/canada' className='drop-link'>Visa in Canada</Link>
+                                <Link to='/workVisa/europe' className='drop-link'>Visa in Europe</Link>
+                                <Link to='/workVisa/australia' className='drop-link'>Visa in Australia</Link>
+                            </div>
+                        </div>
+                        <Link to='/office' className={pathname.includes('office')?'link current':'link'}>Offices</Link>
+                        <Link to='/about' className={pathname.includes('about')?'link current':'link'}>About</Link>
+                    </ul>
                 </div>
 
             </div>

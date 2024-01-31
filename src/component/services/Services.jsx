@@ -9,10 +9,9 @@ const Services = () => {
     let content
     content = (
         <div className='bg-gray-100 w-full'>
-            
             <div className='top-0 relative service-header'>
-              <div className='max-w-[1300px] mx-auto '>
-                <p className='text-[white] text-4xl  pt-28'>Our Services</p>
+              <div className='max-w-[1300px] mx-auto flex items-end justify-start h-full p-[10px]'>
+                <p className='text-[white] text-4xl  '>Our Services</p>
               </div>
             </div>
           <div className='max-w-[1300px] mx-auto bg-[white] py-12'>

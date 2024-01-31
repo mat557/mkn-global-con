@@ -1,0 +1,5 @@
+.back-img{
+    background: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0.8)),url('../../assets/contact.jpg');
+    background-size: cover;
+    background-position: center;
+}

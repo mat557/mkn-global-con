@@ -3,15 +3,14 @@ import Footer from '../../shared/Footer'
 import { Link } from 'react-router-dom'
 
 
-
 const OurOffices = () => {
     let content
  
     content = (
         <div className='office-details bg-gray-50'>
             <div className='office-banner'>
-                <div className='max-w-[1300px] relative mx-auto '>
-                    <p className='text-gray-50 absolute top-[12vh] text-4xl'>Our Offices</p>
+                <div className='max-w-[1300px] relative mx-auto h-full flex items-end justify-start p-[10px]'>
+                    <p className='text-gray-50 text-4xl'>Our Offices</p>
                 </div>
             </div>
 
@@ -32,7 +31,6 @@ const OurOffices = () => {
                             <p className='h-text'>Zindabazar</p>
                             <p className='h-text'>Sylhet, Bangladesh</p>
                             <p className='h-text'>Mobile: +8801720973011</p>
-                            <p className='h-text'>Land: </p>
                             <p className='h-text'>Email: info@mknglobal.co.uk</p>
                         </div>
                         <div className='adress-card'>
@@ -47,10 +45,8 @@ const OurOffices = () => {
                 </div>
                 
             </div>
-                
-                <div className='max-w-[1300px] mx-auto'>
-                    <Link to="/about" className='mb-44 ml-4 btn'>About Us</Link>
-                    <Link to="/contact" className='mb-44 ml-4 btn'>Contact</Link>
+                <div className='max-w-[1300px] mx-auto pb-[40px]'>
+                    <Link to="/about" className='ml-4 px-8 py-3 rounded bg-[#476D81] text-white hover:text-black hover:bg-[#A3B6C0]'>About Us</Link>
                 </div>
 
             <Footer />

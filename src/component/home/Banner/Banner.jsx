@@ -7,22 +7,26 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import usa from '../../../assets/banner.jpg'
-import bnr2 from '../../../assets/banner-uni2.jpeg'
-import bnr3 from '../../../assets/banner-uni3.jpeg'
-import { useNavigate } from 'react-router-dom';
+import uk from '../../../assets/uk.jpg'
+import usa from '../../../assets/usa.jpg'
+import canada from '../../../assets/canada.jpg'
+import aus from '../../../assets/australia.jpg'
+import eur from '../../../assets/eur.jpg'
+import { useNavigate } from 'react-router-dom'
 
 
+
+// 5944,2500
 const Banner = () => {
     const navigate = useNavigate()
     let content
 
     content = (
-        <div className='w-full'>
+        <div className='w-full h-[50vh] lg:h-[70vh]'>
             <Swiper
                 style={{
-                    '--swiper-navigation-color': '#476D81',
-                    '--swiper-pagination-color': 'teal',
+                    '--swiper-navigation-color': '#fff',
+                    '--swiper-pagination-color': '#fff',
                 }}
                 modules={[Navigation, Pagination, Scrollbar , Autoplay]}
                 // navigation
@@ -30,32 +34,32 @@ const Banner = () => {
                 scrollbar={{ draggable: true }}
                 autoplay={{delay:3000,pauseOnMouseEnter: true}}
             >
-                <SwiperSlide className='w-full relative '>
+                <SwiperSlide className='w-full relative'>
                     <div className='overlay1'></div>
                     <img loading="lazy" 
                         className='w-full h-[50vh] lg:h-[70vh]' 
-                        src={bnr2} alt="" />
-                    <div className='absolute top-0 h-full w-full p-4'>
-                        <div className='text-holder flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto top-1/3 lg:top-[40%] relative inset-0 gradient rounded p-4 h-auto '>
-                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>uk</span></h1>
-                            <p className='banner-description text-[white] ml-4 text-base lg:text-lg leading-none '>
+                        src={uk} alt="" />
+                    <div className='absolute bottom-0 w-full mx-auto flex align-center jusitfy-end h-auto '>
+                        <div className='text-holder pb-4 flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto relative h-auto '>
+                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>UK</span></h1>
+                            <p className='banner-description text-[white] ml-4 lg:text-lg leading-none '>
                                 Explore the beauty of Europe with ease. Our visa services ensure a seamless application process, 
                                 so you can focus on planning your journey and creating unforgettable memories.
                             </p>
                             <button onClick={() => navigate('/studentVisa/uk')} className='butun'>more</button>
                         </div>
                     </div>
-
                 </SwiperSlide>
+
                 <SwiperSlide className='w-full relative '>
                     <div className='overlay1'></div>
                     <img loading="lazy" 
                         className='w-full h-[50vh] lg:h-[70vh]' 
                         src={usa} alt="" />
-                    <div className='absolute top-0 h-full w-full p-4'>
-                        <div className='text-holder flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto top-1/3 lg:top-[40%] relative inset-0 gradient rounded p-4 h-auto '>
-                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>usa</span></h1>
-                            <p className='banner-description text-[white] ml-4 text-base lg:text-lg leading-none '>
+                    <div className='absolute bottom-0 w-full mx-auto flex align-center jusitfy-end h-auto '>
+                        <div className='text-holder pb-4 flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto relative  h-auto '>
+                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>USA</span></h1>
+                            <p className='banner-description text-[white] ml-4 lg:text-lg leading-none '>
                                 Explore the beauty of Europe with ease. Our visa services ensure a seamless application process, 
                                 so you can focus on planning your journey and creating unforgettable memories.
                             </p>
@@ -67,11 +71,11 @@ const Banner = () => {
                     <div className='overlay1'></div>
                     <img loading="lazy" 
                         className='w-full h-[50vh] lg:h-[70vh]' 
-                        src={bnr3} alt="" />
-                    <div className='absolute top-0 h-full w-full p-4'>
-                        <div className='text-holder flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto top-1/3 lg:top-[40%] relative inset-0 gradient rounded p-4 h-auto '>
-                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>canada</span></h1>
-                            <p className='banner-description text-[white] ml-4 text-base lg:text-lg leading-none '>
+                        src={canada} alt="" />
+                    <div className='absolute bottom-0 w-full mx-auto flex align-center jusitfy-end h-auto '>
+                        <div className='text-holder pb-4 flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto relative h-auto '>
+                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>Canada</span></h1>
+                            <p className='banner-description text-[white] ml-4 lg:text-lg leading-none '>
                                 Explore the beauty of Europe with ease. Our visa services ensure a seamless application process, 
                                 so you can focus on planning your journey and creating unforgettable memories.
                             </p>
@@ -83,11 +87,11 @@ const Banner = () => {
                     <div className='overlay1'></div>
                     <img loading="lazy" 
                         className='w-full h-[50vh] lg:h-[70vh]' 
-                        src={bnr2} alt="" />
-                    <div className='absolute top-0 h-full w-full p-4'>
-                        <div className='text-holder flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto top-1/3 lg:top-[40%] relative inset-0 gradient rounded p-4 h-auto '>
-                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>australia</span></h1>
-                            <p className='banner-description text-[white] ml-4 text-base lg:text-lg leading-none '>
+                        src={aus} alt="" />
+                    <div className='absolute bottom-0 w-full mx-auto flex align-center jusitfy-end h-auto '>
+                        <div className='text-holder pb-4 flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto relative h-auto '>
+                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>Australia</span></h1>
+                            <p className='banner-description text-[white] ml-4 lg:text-lg leading-none '>
                                 Explore the beauty of Europe with ease. Our visa services ensure a seamless application process, 
                                 so you can focus on planning your journey and creating unforgettable memories.
                             </p>
@@ -99,11 +103,11 @@ const Banner = () => {
                     <div className='overlay1'></div>
                     <img loading="lazy" 
                         className='w-full h-[50vh] lg:h-[70vh]' 
-                        src={bnr2} alt="" />
-                    <div className='absolute top-0 h-full w-full p-4'>
-                        <div className='text-holder flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto top-1/3 lg:top-[40%] relative inset-0 gradient rounded p-4 h-auto '>
-                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>europe</span></h1>
-                            <p className='banner-description text-[white] ml-4 text-base lg:text-lg leading-none '>
+                        src={eur} alt="" />
+                    <div className='absolute bottom-0 w-full mx-auto flex align-center jusitfy-end h-auto '>
+                        <div className='text-holder flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto relative h-auto '>
+                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>Europe</span></h1>
+                            <p className='banner-description text-[white] ml-4 lg:text-lg leading-none '>
                                 Explore the beauty of Europe with ease. Our visa services ensure a seamless application process, 
                                 so you can focus on planning your journey and creating unforgettable memories.
                             </p>

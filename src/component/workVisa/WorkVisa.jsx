@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Footer from '../../shared/Footer'
 
+
 const WorkVisa = () => {
     let content
     const navigate = useNavigate()
@@ -9,7 +10,7 @@ const WorkVisa = () => {
     const [data,setData] = useState([])
 
     useEffect(()=>{
-        fetch('/info/universitiesInfo.json')
+        fetch('/info/workpermitInfo.json')
         .then(res => {
             if (!res.ok) {
                 throw new Error(`Network response was not ok: ${res.status}`);
@@ -36,19 +37,19 @@ const WorkVisa = () => {
                     <p className='text-2xl font-bold pb-4 text-[#476D81]'>{info?.applicationInfo?.title}</p>
                     {info?.applicationInfo?.universities?.map((a,index) => <p key={index} className='pl-4 text-lg'>{a}</p>)}
                 </div> */}
-                <button className='btn border-2 border-[#476D81]' onClick={() => navigate(`/studentVisa/${region}`)}>Check student visa in {region}</button>
+                <button className='py-2 px-5 rounded bg-[#476D81] text-white' onClick={() => navigate(`/studentVisa/${region}`)}>Check student visa in {region}</button>
 
                 <div className='pb-4 mt-12 w-[90%] lg:w-1/2 mx-auto text-center'>
                     <p className='text-2xl font-bold pb-0 text-[#476D81]'>{info?.processingDuration?.title}</p>
                     <p className='text-[15px] pt-4'>{info?.processingDuration?.note}</p>
                 </div>
 
-                <div className='pb-4 mt-16 w-[90%] lg:w-1/2 mx-auto text-center'>
+                <div className='pb-4 mt-16 w-[90%] lg:w-[250px] mx-auto text-center flex flex-col justify-center'>
                     <p className='text-2xl font-bold pb-0 text-[#476D81]'>{info?.requiredDocuments?.title}</p>
-                    {info?.requiredDocuments?.documents.map((p,index) => <p className='pl-4 pt-[4px] text-lg' key={index}>{p}</p>)}
+                    {info?.requiredDocuments?.documents.map((p,index) => <p className='pt-[4px] text-left text-lg pl-[100px] lg:pl-[90px]' key={index}>{p}</p>)}
                 </div>
 
-                <div className='pb-4 mt-24 w-[90%] mx-auto text-center'>
+                <div className='pb-4 mt-16 w-[90%] mx-auto text-center'>
                     <p className='text-2xl font-bold pb-0 text-[#476D81]'>{info?.applicationProcessOverview?.title}</p>
                     <div className='text-justify p-4'>
                         {info?.applicationProcessOverview?.content}

@@ -1,7 +1,7 @@
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCaretDown, faHome, faXmark } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram} from '@fortawesome/free-brands-svg-icons'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
@@ -17,7 +17,6 @@ const NavBar = ({isOPen , setIsOpen , sidemenu ,  dropMenu1 ,dropMenu2}) => {
             <div className='nav-tag'>
                 <div className="social-link">
                         <Link className=''><FontAwesomeIcon icon={faFacebook}  size="lg"/></Link>
-                        <Link className=''><FontAwesomeIcon className=''  icon={faXTwitter}  size="lg"/></Link>
                         <Link className=''><FontAwesomeIcon className='' icon={faInstagram} size="lg"/> </Link>
                 </div>
             </div>

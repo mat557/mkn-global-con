@@ -34,6 +34,14 @@
     color: #fff;
 }
 
+@media screen and (max-width:1390px) {
+    .text-holder{
+        width: 100%;
+        background: rgba(0,0,0,.6);
+        border-radius: 7px;
+        padding: 30px 160px;
+    }
+}
 
 
 @media screen and (max-width:450px) {

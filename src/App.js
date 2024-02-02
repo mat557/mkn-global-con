@@ -7,7 +7,6 @@ import NotFound from "./shared/NotFound";
 import StudentVisa from "./component/studentVisa/StudentVisa";
 import Files from "./component/requardFile/Apply";
 import WorkVisa from "./component/workVisa/WorkVisa";
-import Details from "./component/home/visatype/Details";
 import './App.css';
 import { useEffect, useRef, useState } from "react";
 import NavBar from "./shared/NavBar";
@@ -72,7 +71,6 @@ function App() {
             <Route path="/apply" element={<Files />} />
             <Route path="/studentVisa/:region" element={<StudentVisa />} />
             <Route path="/workVisa/:region" element={<WorkVisa />} />
-            <Route path="/info/:type" element={<Details />} />
             <Route path="/office" element={<OurOffices />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />

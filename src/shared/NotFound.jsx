@@ -17,6 +17,7 @@ const NotFound = () => {
     }
 
     const textStyle = {
+      textAlign:'center',
       fontSize:'55px',
       color:'white'
     }

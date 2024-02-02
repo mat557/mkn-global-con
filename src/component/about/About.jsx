@@ -3,7 +3,7 @@ import './About.css'
 import about from '../../assets/about.jpeg'
 import imran from '../../assets/countr-manager.jpg'
 import ceo from '../../assets/ceo.jpg'
-import saiful from '../../assets/saifulislam.jpg'
+import saiful from '../../assets/saiful.jpg'
 import mahfuz from '../../assets/22730.jpg'
 import { Link } from 'react-router-dom'
 

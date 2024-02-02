@@ -40,8 +40,8 @@ const Banner = () => {
                         className='w-full h-[50vh] lg:h-[70vh]' 
                         src={uk} alt="" />
                     <div className='absolute bottom-0 w-full mx-auto flex align-center jusitfy-end h-auto '>
-                        <div className='text-holder pb-4 flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto relative h-auto '>
-                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>UK</span></h1>
+                        <div className='text-holder max-w-[1300px] mx-auto'>
+                            <h1 className='leading-10 text-2xl lg:text-8xl font-bold ml-4 heading'>visa for UK</h1>
                             <p className='banner-description text-[white] ml-4 lg:text-lg leading-none '>
                                 Explore the beauty of Europe with ease. Our visa services ensure a seamless application process, 
                                 so you can focus on planning your journey and creating unforgettable memories.
@@ -57,8 +57,8 @@ const Banner = () => {
                         className='w-full h-[50vh] lg:h-[70vh]' 
                         src={usa} alt="" />
                     <div className='absolute bottom-0 w-full mx-auto flex align-center jusitfy-end h-auto '>
-                        <div className='text-holder pb-4 flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto relative  h-auto '>
-                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>USA</span></h1>
+                        <div className='text-holder max-w-[1300px] mx-auto'>
+                            <h1 className='leading-10 text-2xl lg:text-8xl font-bold ml-4 heading'>visa for USA</h1>
                             <p className='banner-description text-[white] ml-4 lg:text-lg leading-none '>
                                 Explore the beauty of Europe with ease. Our visa services ensure a seamless application process, 
                                 so you can focus on planning your journey and creating unforgettable memories.
@@ -73,8 +73,8 @@ const Banner = () => {
                         className='w-full h-[50vh] lg:h-[70vh]' 
                         src={canada} alt="" />
                     <div className='absolute bottom-0 w-full mx-auto flex align-center jusitfy-end h-auto '>
-                        <div className='text-holder pb-4 flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto relative h-auto '>
-                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>Canada</span></h1>
+                        <div className='text-holder max-w-[1300px] mx-auto'>
+                            <h1 className='leading-10 text-2xl lg:text-8xl font-bold ml-4 heading'>visa for Canada</h1>
                             <p className='banner-description text-[white] ml-4 lg:text-lg leading-none '>
                                 Explore the beauty of Europe with ease. Our visa services ensure a seamless application process, 
                                 so you can focus on planning your journey and creating unforgettable memories.
@@ -89,8 +89,8 @@ const Banner = () => {
                         className='w-full h-[50vh] lg:h-[70vh]' 
                         src={aus} alt="" />
                     <div className='absolute bottom-0 w-full mx-auto flex align-center jusitfy-end h-auto '>
-                        <div className='text-holder pb-4 flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto relative h-auto '>
-                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>Australia</span></h1>
+                        <div className='text-holder max-w-[1300px] mx-auto'>
+                            <h1 className='leading-10 text-2xl lg:text-8xl font-bold ml-4 heading'>visa for Australia</h1>
                             <p className='banner-description text-[white] ml-4 lg:text-lg leading-none '>
                                 Explore the beauty of Europe with ease. Our visa services ensure a seamless application process, 
                                 so you can focus on planning your journey and creating unforgettable memories.
@@ -105,8 +105,8 @@ const Banner = () => {
                         className='w-full h-[50vh] lg:h-[70vh]' 
                         src={eur} alt="" />
                     <div className='absolute bottom-0 w-full mx-auto flex align-center jusitfy-end h-auto '>
-                        <div className='text-holder flex flex-col align-center jusitfy-center max-w-[1300px] mx-auto relative h-auto '>
-                            <h1 className='leading-10 text-2xl lg:text-8xl text-[#476D81] font-bold ml-4 heading'>visa for <span className='text-white text-4xl'>Europe</span></h1>
+                        <div className='text-holder max-w-[1300px] mx-auto '>
+                            <h1 className='leading-10 text-2xl lg:text-8xl font-bold ml-4 heading'>visa for Europe</h1>
                             <p className='banner-description text-[white] ml-4 lg:text-lg leading-none '>
                                 Explore the beauty of Europe with ease. Our visa services ensure a seamless application process, 
                                 so you can focus on planning your journey and creating unforgettable memories.

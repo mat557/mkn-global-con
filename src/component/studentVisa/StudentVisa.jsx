@@ -28,8 +28,8 @@ const StudentVisa = () => {
     content = (
         <div className='w-full bg-gray-100'>
             <div className='st-header h-[20vh]'>
-                <div className='max-w-[1300px] mx-auto'>
-                    <p className='text-[white] pt-[30%] md:pt-20 lg:pt-28 pl-4 text-lg lg:text-4xl'>Student visa in <span className='uppercase'>{c.toLowerCase()}</span></p>
+                <div className='max-w-[1300px] mx-auto flex justify-start items-end h-full'>
+                    <p className='text-[white] pb-2 text-lg lg:text-4xl'>Student visa in <span className='uppercase'>{c.toLowerCase()}</span></p>
                 </div>
             </div>
             

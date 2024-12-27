@@ -73,6 +73,16 @@ const About = () => {
                             <p className='mt-2 font-bold text-lg'>Md Mahfuz Anam</p>
                             <p className='text-sm text-[#476D81]'>IT Support</p>
                         </div>
+                        <div className='p-3 w-[95%] lg:w-[350px] h-auto bg-[white] border-8 border-[#D1DBE0] rounded bg-gray-100 flex flex-col items-start justify-end'>
+                            <img className='w-[100%] mx-auto  rounded' src="https://i.ibb.co.com/d4cp5SQ/nazmul.jpg" alt="" />
+                            <p className='mt-2 font-bold text-lg'>Najmul Islam Chowdhury Shahin</p>
+                            <p className='text-sm text-[#476D81]'>Marketing Officer</p>
+                        </div>
+                        <div className='p-3 w-[95%] lg:w-[350px] h-auto bg-[white] border-8 border-[#D1DBE0] rounded bg-gray-100 flex flex-col items-start justify-end'>
+                            <img className='w-[100%] mx-auto  rounded' src="https://i.ibb.co.com/Khr5K3T/ashraf.jpg" alt="" />
+                            <p className='mt-2 font-bold text-lg'>Ashraf Siddiki Chowdhury</p>
+                            <p className='text-sm text-[#476D81]'>Marketing Coordinator</p>
+                        </div>
                     </div>
                 </div>
             </div>

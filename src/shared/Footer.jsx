@@ -36,7 +36,7 @@ const Footer = () => {
             </footer>
             <div className="w-full bg-[#476D81] h-[auto] flex lg:flex-col flex-col gap-[10%] items-center justify-center p-1">
                 <p className="text-white text-[15px] text-center lg:text-justify">© Copyright 2024 MKN Global Consultant. All rights reserved.</p>
-                <p className="text-white text-[15px] text-center lg:text-justify">Developed by- Md Mahfuz Anam Tasnim (mahfuz.ta26@gmail.com)</p>
+                <p className="text-white text-[15px] text-center lg:text-justify">Developed by- Md Mahfuz Anam Tasnim (mahfuz.ta09@gmail.com)</p>
             </div>
         </div>
     )
